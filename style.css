@@ -8,7 +8,7 @@
     display: flex;
     flex-direction: row;
     height: 800px;
-    width: 1000px;
+    width: 1400px;
     position: relative;
 }
 
@@ -18,6 +18,36 @@
     height: 100%;
     border-color: black;
     border-width: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.explanation{
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    background-color: lightblue;
+    width: 100%;
+}
+
+.lower-bar{
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    background-color: lightblue;
+    width: 100%;
+}
+
+.form{
+    width: 100%;
+    height: 100%;
+    background-color: lightgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .side-background{
@@ -50,3 +80,24 @@
     height: 100%;
 }
 
+fieldset{
+    border: none;
+}
+
+.field-1, .field-2, .field-3{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.field-0{
+    width: 100%;
+}
+
+label{
+    padding-right: 5px;
+}
+
+input{
+    margin-right: 15px;
+}
