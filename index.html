@@ -27,26 +27,42 @@
         <form class="form">
           <fieldset class="field-0">
             <fieldset class="field-1">
-              <label for="first-name">First Name:</label>
-              <input type="text" id="first-name" />
-              <label for="last-name">Last Name:</label>
-              <input type="text" id="last-name" />
+              <div class="first-name">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" />
+              </div>
+              <div class="last-name">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" />
+              </div>
+              <div class="password">
+                <label for="password">Password</label>
+                <input type="password" id="password" />
+              </div>
             </fieldset>
             <fieldset class="field-2">
-              <label for="email">Email:</label>
-              <input type="email" id="email" />
-              <label for="phone-number">Phone Number:</label>
-              <input type="number" id="phone-number" />
-            </fieldset>
-            <fieldset class="field-3">
-              <label for="password">Password:</label>
-              <input type="password" id="password" />
-              <label for="confirm-password">Confirm Password:</label>
-              <input type="password" id="confirm-password" />
+              <div class="email">
+                <label for="email">Email</label>
+                <input type="email" id="email" />
+              </div>
+              <div class="phone-number">
+                <label for="phone-number">Phone Number</label>
+                <input type="number" id="phone-number" />
+              </div>
+              <div class="confirm-password">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" />
+              </div>
             </fieldset>
           </fieldset>
         </form>
-        <div class="lower-bar">Already have an account?</div>
+        <div class="lower-bar">
+          <form>
+            <input type="submit" id="button" value="Create Account" />
+          </form>
+          Already have an account?
+          <a class="log-in" href="https://www.instagram.com/">log in</a>
+        </div>
       </div>
     </div>
   </body>
