@@ -24,46 +24,61 @@
       </div>
       <div class="side">
         <div class="explanation">Welcome, sign up to find your true zen</div>
-        <form class="form">
+        <form class="form" id="form">
           <fieldset class="field-0">
             <fieldset class="field-1">
               <div class="first-name">
                 <label for="first-name">First Name</label>
                 <input type="text" id="first-name" />
+                <div id="error-message-name"></div>
               </div>
               <div class="last-name">
                 <label for="last-name">Last Name</label>
                 <input type="text" id="last-name" />
+                <div id="error-message-last-name"></div>
               </div>
               <div class="password">
                 <label for="password">Password</label>
                 <input type="password" id="password" />
+                <div id="error-message-password"></div>
               </div>
             </fieldset>
             <fieldset class="field-2">
               <div class="email">
                 <label for="email">Email</label>
                 <input type="email" id="email" />
+                <div id="error-message-email"></div>
               </div>
               <div class="phone-number">
                 <label for="phone-number">Phone Number</label>
-                <input type="number" id="phone-number" />
+                <input
+                  type="number"
+                  id="phone-number"
+                  minlength="10"
+                  maxlength="10"
+                />
+                <div id="error-message-phone"></div>
               </div>
               <div class="confirm-password">
                 <label for="confirm-password">Confirm Password</label>
-                <input type="password" id="confirm-password" />
+                <input type="password" id="confirmpassword" />
+                <div id="error-message-confirm-password"></div>
               </div>
             </fieldset>
           </fieldset>
+          <div class="bottom-field">
+            <div class="submit-button">
+              <input type="submit" id="button" value="Create Account" />
+            </div>
+          </div>
         </form>
         <div class="lower-bar">
-          <form>
-            <input type="submit" id="button" value="Create Account" />
-          </form>
           Already have an account?
           <a class="log-in" href="https://www.instagram.com/">log in</a>
+          <div id="message"></div>
         </div>
       </div>
     </div>
+    <script src="javascript.js"></script>
   </body>
 </html>
