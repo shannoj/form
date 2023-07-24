@@ -150,3 +150,40 @@ input:focus{
     border-style: solid;
     height: 50px;
 }
+
+.bottom-field{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#password{
+
+}
+
+#confirmpassword{
+
+}
+
+#email{
+
+}
+
+#first-name{
+
+}
+
+#last-name{
+
+}
+
+#phone-number{
+
+}
+
+#error-message{
+    text-align: center;
+    color: red;
+    font-style: bold;
+}
